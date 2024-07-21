@@ -1,0 +1,35 @@
+<h3>Edit Movie</h3>
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-6">
+        <form [formGroup]="movieForm">
+            <div class="form-group">
+                Movie Id : <input type="text" class="form-control" formControlName="mid" />
+            </div>
+            <div class="form-group">
+                Movie Name : <input type="text" class="form-control" formControlName="mname" />
+            </div>
+            <div class="form-group">
+                Description : <input type="text" class="form-control" formControlName="mdescription" />
+            </div>
+
+            <div class="form-group">
+                Poster Image :<input type="text" class="form-control" formControlName="mposter" />
+            </div>
+
+            <div class="form-group">
+                Release Date : <input type="text" class="form-control" formControlName="mdate" />
+            </div>
+            <div class="form-group">
+                Actor : <input type="text" class="form-control" formControlName="mactor" />
+            </div>
+        </form>
+        <div>
+            <button class="btn btn-primary" style="margin: 30px;" (click)="updateMovie()">Update Movie</button>
+            <!-- <button class="btn btn-danger" style="margin: 30px;" (click)="resetForm()">Reset</button> -->
+        </div>
+    </div>
+    <div class="col-3"></div>
+
+</div>

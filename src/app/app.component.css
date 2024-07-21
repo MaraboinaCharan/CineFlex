@@ -1,0 +1,15 @@
+.hyd-emp {
+    background-color: rgb(229, 178, 178);
+    font-weight: bold;
+    color: rgb(134, 95, 160) !important
+}
+
+.custom-footer {
+    height: 40px;
+    font-size: bold;
+    color: white;
+}
+
+.content-holder{
+    height: 650px;
+}

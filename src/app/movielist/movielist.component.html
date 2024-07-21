@@ -1,0 +1,23 @@
+<h3>Movies List </h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Movie Name</th>
+            <th>Hero Name</th>
+            <th>Release Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let movie of movieList">
+        <td>{{movie.movie_name}}</td>
+        <td>{{movie.movie_actor | uppercase}}</td>
+        <td>{{movie.movie_date | date:'dd-MM-yyyy'}}</td>
+        <td> 
+            <button class="btn btn-primary" >New</button> | 
+            <button class="btn btn-warning" (click)="editMovie(movie.movie_id)">Edit</button>| 
+            <button class="btn btn-danger" (click) ="deletMovie(movie.movie_id)" >Del</button>
+            
+        </td>
+    </tr>
+</table>
